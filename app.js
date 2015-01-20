@@ -8,6 +8,8 @@ var squares = document.getElementsByClassName("square");
 
 	function clickSquare() {
 	 	console.log("This square is clicked"); // ---> Check to see that square is being clicked.
+	 	event.target.style.backgroundColor = "gray"; // --> When square is clicked, change square to gray.
+
 	}
 	
 });
