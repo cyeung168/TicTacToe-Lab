@@ -23,4 +23,15 @@ var squares = document.getElementsByClassName("square");
 		}
 	}
 	
+	var reset = document.getElementById("reset");
+	reset.addEventListener("click", resetGrid);
+
+// ---> Does not properly reset grid... breaks the rows or squares
+	function resetGrid() {
+		var resetSquare = document.getElementsByClassName("square"); // ---> Where is the callback for this definition? Already defined?
+		for (var i = 0; i < resetSquare.length; i++) {
+			resetSquare[i].setAttribute("class", "square");
+		}
+
+	}
 });
